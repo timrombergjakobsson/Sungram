@@ -21,5 +21,10 @@ end
 
 get '/' do
   @results = CACHE.fetch('sun', 800) { getPhotos() } 
-  erb :index
+  puts @results
+  haml :index
+end
+
+not_found do
+  haml :not_found
 end
