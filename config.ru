@@ -1,7 +1,5 @@
 require 'rubygems'
 require 'bundler'
-require 'instagram'
-require 'dalli' 
 
 Bundler.require
 

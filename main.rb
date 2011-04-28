@@ -4,9 +4,7 @@ require 'instagram'
 require 'haml'
 require 'dalli'
 require 'yajl' 
-
-
-CACHE = Dalli::Client.new
+set :cache, CACHE = Dalli::Client.new
 
 Instagram.configure do |config|
   config.client_id = 'bded657abe374e3da6ce4753286f6850'
@@ -20,8 +18,7 @@ end
 
 
 get '/' do
-  @results = CACHE.fetch('sun', 800) { getPhotos() } 
-  puts @results
+  @results = CACHE.fetch('sun', 900) { getPhotos() }
   haml :index
 end
 

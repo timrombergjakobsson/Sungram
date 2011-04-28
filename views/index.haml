@@ -13,6 +13,9 @@
 		#container
 		%h1 Sungram!
 		%ul#photos
+		-#- @results.each do |result|
+		-#%li.photo_wrapper
+		-#.photo{:style => 'background: url(' + result + ') center no-repeat;'}
 			
 		#footer
 			%p
@@ -20,4 +23,6 @@
 				%a{:href => 'http://itim.nu'} Tim Romberg
 				Sungram is not affiliated with 
 				%a{:href => 'http://instagram.com'} Instagram
-			
+				Kudos to 
+				%a{:href => 'http://kittygram.heroku.com'} Kittygram
+		%script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js", :type => "text/javascript"}

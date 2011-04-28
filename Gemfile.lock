@@ -34,6 +34,7 @@ PLATFORMS
 
 DEPENDENCIES
   dalli
+  faraday (= 0.5.7)
   haml
   instagram
   shotgun
