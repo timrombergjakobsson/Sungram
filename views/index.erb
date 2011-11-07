@@ -10,12 +10,12 @@
 		<div id="container"> 
 		<h1>Sungram</h1>
 		 	<ul id="photos">
-		 		<li class="photo_wrapper">
-				 <% @results.each do | r | %>         
+				 <% @results.each do | r | %>
+				<li class="photo_wrapper">                      
 					<div class="photo" style="background: url('<%= r %>') repeat no-repeat;">
 					</div> 
-				<% end %>
-				</li>
+				 </li>   
+				<% end %>    
 		 	</ul>
 		</div> 
 		<footer>
