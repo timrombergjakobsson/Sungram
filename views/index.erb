@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+	<head> 
+		<meta charset="utf-8" /> 
+		<title>Sungram</title> 
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico" type="text/css" media="screen" title="no title" charset="utf-8"> 
+		
+	</head> 
+	<body> 
+		<div id="container"> 
+		<h1>Sungram</h1>
+		 	<ul id="photos">
+		 		<li class="photo_wrapper">
+				 <% @results.each do | r | %>         
+					<div class="photo" style="background: url('<%= r %>') repeat no-repeat;">
+					</div> 
+				<% end %>
+				</li>
+		 	</ul>
+		</div> 
+		<footer>
+			<p>
+				<a href="http://timromberg.se.nu">Tim Romberg</a>
+				 Sungram is not affiliated with  
+				<a href="http://instagram.com">Instagram</a>
+				Kudos to
+				<a href="http://kittygram.heroku.com">Kittygram</a>  	
+			</p>
+		</footer>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" charset="utf-8"></script>  
+		<script type="text/javascript" src="init.js" charset="utf-8"></script>   
+		<script type="text/javascript" src="main.js" charset="utf-8"></script>  
+		<script type="text/javascript" src="main.js" charset="utf-8"></script>
+		  
+		
+	</body> 
+</html

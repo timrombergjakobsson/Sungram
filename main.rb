@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'instagram'
 require 'haml'
+require 'erb'
 require 'dalli'
 require 'yajl' 
 require 'logger'
@@ -24,13 +25,14 @@ error 404 do
 end  
 
 def getPhotos
-  photos = Instagram.tag_recent_media('sun')  
-  puts photos
+  photos = Instagram.tag_recent_media('sun') 
+  puts photos 
   photos.find_all{ |photo| photo.filter =!nil}.map { |photo| photo.images.low_resolution.url}   
 end  
 
 
 get '/' do   
-  @results = CACHE.fetch('sun', 900) { getPhotos() }       
-  haml :index
-end   
+  @results = CACHE.fetch('sun', 900) { getPhotos() }    
+  erb :index
+end 
+  

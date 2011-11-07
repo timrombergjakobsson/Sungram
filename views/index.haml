@@ -1,29 +1,26 @@
-!!! 
+!!!
 %html
-	%head
-		%title Sungram
-		%meta{:"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"} 
-		%meta{:content => "Sungram!", :property => "og:title"}
-		%meta{:name => "description", :content => "Instagram photos for sunlovers."}
-		%meta{:content => "http://sungram.heroku.com/", :property => "og:url"}
-		%link{:href => "style.css", :rel => "stylesheet"}
-		%link{:href => 'http://fonts.googleapis.com/css?family=Pacifico', :rel =>'stylesheet'}
-		  
-	%body
-		#container
-		%h1 Sungram!  
-		%ul#photos
-		-#- @results.each do |result|
-		-#%li.photo_wrapper
-		-#.photo{:style => 'background: url(' + result + ') center no-repeat;'}     
-			
-		#footer
-			%p
-				Built by
-				%a{:href => 'http://itim.nu'} Tim Romberg
-				Sungram is not affiliated with 
-				%a{:href => 'http://instagram.com'} Instagram
-				Kudos to 
-				%a{:href => 'http://kittygram.heroku.com'} Kittygram
-		%script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js", :type => "text/javascript"}   
-		%script{:src => 'script.js', :type => "text/javascript"}
+  %head
+    %title Sungram
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "Sungram!", :property => "og:title"}/
+    %meta{:content => "Instagram photos for sunlovers.", :name => "description"}/
+    %meta{:content => "http://sungram.heroku.com/", :property => "og:url"}/
+    %link{:href => "style.css", :rel => "stylesheet"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Pacifico", :rel => "stylesheet"}/
+  %body
+    #container
+  		%h1 Sungram!
+  		%ul#photos
+  		%li.photo_wrapper
+  - @results.each do |p|    
+  .photo{:style => 'background: url(' + p + ') center no-repeat;'}
+    #footer
+      %p
+        Built by
+        %a{:href => "http://itim.nu"} Tim Romberg
+        Sungram is not affiliated with
+        %a{:href => "http://instagram.com"} Instagram
+        Kudos to
+        %a{:href => "http://kittygram.heroku.com"} Kittygram
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js", :type => "text/javascript"}

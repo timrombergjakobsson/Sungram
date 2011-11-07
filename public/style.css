@@ -17,14 +17,15 @@ h1 {
 	color: #FFFFE0;
 	font-size: 6em;
 	text-shadow: 4px 4px 4px #000;
-	line-height: 1.2;
+	line-height: 1.2; 
+	margin-bottom: 1.5em;
 	word-spacing: 0em;
 	font-family: 'Pacifico', arial, serif;;
 } 
 
 #container {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 50%;
   margin-left: -238px;
   margin-top: -180px;
@@ -43,14 +44,37 @@ a:hover {
 
 ul li {
 	list-style: none;
+	float:left;
 	
 } 
 
+.photo_wrapper {
+  overflow: hidden;
+  padding: 0 100px;
+}
+
+.photo {
+  -moz-border-radius: 20px;
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  -webkit-border-radius: 20px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  height: 270px; 
+  color: rgba(255, 0, 0, 0, 0.2);
+  overflow: hidden;
+  padding:5px;
+  margin:5px;
+  width: 150px;  
+  height:150px;
+
+}
 
 
 
 
-#footer {
+footer {
   z-index: 50;
   position: absolute;
   bottom: 0;
@@ -62,9 +86,11 @@ ul li {
   padding: 10px 0;
 }
 
-#footer p {
+footer p {
   text-align:center;
   font-size: 15px;
   line-height: 20px;
   margin-right: 10px;
-}
+}   
+
+
