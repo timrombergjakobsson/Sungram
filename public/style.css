@@ -18,7 +18,7 @@ h1 {
 	font-size: 6em;
 	text-shadow: 4px 4px 4px #000;
 	line-height: 1.2; 
-	margin-bottom: 1.5em;
+	margin-bottom: 1.0em;
 	word-spacing: 0em;
 	font-family: 'Pacifico', arial, serif;;
 } 
@@ -27,10 +27,9 @@ h1 {
   position: absolute;
   top: 20%;
   left: 50%;
-  margin-left: -238px;
+  margin-left: -450px;
   margin-top: -180px;
-  width: 476px;
-  height: 360px;
+  width: 960px;
 }
 
 a {
@@ -50,7 +49,7 @@ ul li {
 
 .photo_wrapper {
   overflow: hidden;
-  padding: 0 100px;
+  /*padding: 0 100px;*/
 }
 
 .photo {
@@ -61,23 +60,27 @@ ul li {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-  height: 270px; 
   color: rgba(255, 0, 0, 0, 0.2);
   overflow: hidden;
   padding:5px;
   margin:5px;
   width: 150px;  
-  height:150px;
+  height: 150px;
 
 }
+
+.photo {
+	float:left;
+} 
 
 
 
 
 footer {
   z-index: 50;
-  position: absolute;
+  position: relative;
   bottom: 0;
+  margin-top: 1000px;
   background: #8B4513;
   width: 100%;
   min-width: 960px;

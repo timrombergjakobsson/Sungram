@@ -26,9 +26,17 @@ end
 
 def getPhotos
   photos = Instagram.tag_recent_media('sun') 
-  puts photos 
+  #puts photos 
   photos.find_all{ |photo| photo.filter =!nil}.map { |photo| photo.images.low_resolution.url}   
-end  
+end
+
+def getUserName
+  photos = Instagram::popular
+  photo.find_all { |photo| photo.filter = !nil}.map { |photo| photo.user.username} 
+  puts photo
+  
+end
+    
 
 
 get '/' do   

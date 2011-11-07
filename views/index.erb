@@ -27,11 +27,34 @@
 				<a href="http://kittygram.heroku.com">Kittygram</a>  	
 			</p>
 		</footer>
+		<script type="text/javascript" charset="utf-8">
+			var SPINNER = function() {  
+				return {
+				
+					spinner_method : function() {
+					var opts = {
+				  		lines: 12, // The number of lines to draw
+				  		length: 7, // The length of each line
+				  		width: 4, // The line thickness
+				  		radius: 10, // The radius of the inner circle
+				  		color: '#000', // #rgb or #rrggbb
+				  		speed: 1, // Rounds per second
+				  		trail: 60, // Afterglow percentage
+				  		shadow: false // Whether to render a shadow
+					};
+					var target = document.getElementById('div');
+					var spinner = new Spinner(opts).spin(target); 
+					}
+				  };
+				
+			}();
+			
+		</script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" charset="utf-8"></script>  
 		<script type="text/javascript" src="init.js" charset="utf-8"></script>   
 		<script type="text/javascript" src="main.js" charset="utf-8"></script>  
-		<script type="text/javascript" src="main.js" charset="utf-8"></script>
-		  
-		
+		<script type="text/javascript" src="main.js" charset="utf-8"></script> 
+		<script type="text/javascript" src="spin.js" charset="utf-8"></script>	
+		   
 	</body> 
 </html
